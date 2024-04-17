@@ -64,29 +64,29 @@
     </div>
     </section>
     <section id="sec-form">
-        <div id="container-tit">
+        <div>
             <h2>Say hello</h2>
             <p>Lorem Ipsum is simply dummy text of the printing .</p>
         </div>
         <form>
             <fieldset class="grupo">
                 <div class="campo">
-                    <label for="firstName">First Name</label><br>
-                    <input type="text">
+                    <label for="firstName" id="firstName">First Name</label><br>
+                    <input type="text" class="input-name">
                 </div>
                 <div class="campo">
-                    <label for="lastName">Last Name</label><br>
-                    <input type="text">
+                    <label for="lastName" id="lastName">Last Name</label><br>
+                    <input type="text" class="input-name">
                 </div>
             </fieldset>
 
-            <div>
-                <label for="email">Email Address</label>
-                <input type="text">
+            <div id="div-email">
+                <label for="email" id="email">Email Address</label><br>
+                <input type="text" class="input-email">
             </div>
-            <div>
-                <label>Message</label>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
+            <div id="div-message">
+                <label id="message">Message</label><br>
+                <textarea name="message" id="input-message" cols="30" rows="10"></textarea>
             </div>
             
         </form>

@@ -128,28 +128,7 @@ h1 {
     height: 100%;
     margin-left: -8px;
     margin-right: -8px;
-}
-
-fieldset {
-    border: none;
-}
-
-fieldset.grupo .campo {
-    float: left;
-    margin-right: 100px;
-    
-}
-
-
-/* #form {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-} */
-
-#container-tit {
     text-align: center;
-    
 }
 
 h2 {
@@ -164,13 +143,70 @@ h2 {
     font-style: normal;
 }
 
-/* #div-name {
 
-} */
+form {
+    display: inline-block;
+    position: relative;
+}
+
+fieldset {
+    border: none;
+
+}
+
+fieldset.grupo .campo {
+    float: left;
+}
+
+#firstName {
+    margin-right: 90px;
+}
+
+.input-name {
+    width: 322px;
+    height: 56px;
+    border-radius: 9px;
+    border: 0.6px #CECECE solid;
+    background: rgba(255, 255, 255, 7%);
+    color: #FFFFFF;
+}
+
+.input-email {
+    width: 671px;
+    height: 56px;
+    border-radius: 9px;
+    border: 0.6px #CECECE solid;
+    background: rgba(255, 255, 255, 7%);
+    color: #FFFFFF;
+}
+
+#message, #firstName, #lastName, #email {
+    font-size: 14px;
+    color: #4F4F4F;
+    font-weight: 500;
+    font-style: normal;
+}
+
+#input-message {
+    width: 671px;
+    height: 232px;
+    border-radius: 9px;
+    border: 0.6px #CECECE solid;
+    background: rgba(255, 255, 255, 7%);
+    color: #FFFFFF;
+
+}
+
+#div-message, #div-email {
+    margin-top: 20px;
+}
 
 /* #form {
-
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 } */
+
 
 
 
