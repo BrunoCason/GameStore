@@ -19,7 +19,9 @@ body {
     color: #fff;
     padding: 10px 20px;
     margin: 0 auto;
-    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
 }
 
 #menu ul li {
