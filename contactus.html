@@ -49,12 +49,12 @@
                 <img class="medias" src="images-contact/twitter.png" alt="">
                 <img class="medias" src="images-contact/linkedin.png" alt="">
             </div>
-            <div class="vert"></div>
+            <div class="traco-vertical"></div>
             <div id="phone">
                 <img id="img-phone" src="images-contact/phone.png" alt="">
                 <p>+94 4444 5555 6</p>
             </div>
-            <div class="vert"></div>
+            <div class="traco-vertical"></div>
             <div id="loc">
                 <img id="img-loc" src="images-contact/gps.png" alt="">
                 <p>but also the leap into electronic <br> typesetting</p>
@@ -66,60 +66,36 @@
     <section id="sec-form">
         <div>
             <h2>Say hello</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing .</p>
+            <p id="p-form">Lorem Ipsum is simply dummy text of the printing .</p>
         </div>
         <form>
-            <fieldset class="grupo">
-                <div class="campo">
-                    <label for="firstName" id="firstName">First Name</label><br>
-                    <input type="text" class="input-name">
-                </div>
-                <div class="campo">
-                    <label for="lastName" id="lastName">Last Name</label><br>
-                    <input type="text" class="input-name">
-                </div>
-            </fieldset>
+            <div id="container-form">
+                <fieldset class="grupo">
+                    <div class="campo">
+                        <label for="firstName" id="firstName">First Name</label><br>
+                        <input type="text" class="input-name">
+                    </div>
+                    <div class="campo">
+                        <label for="lastName" id="lastName">Last Name</label><br>
+                        <input type="text" class="input-name">
+                    </div>
+                </fieldset>
 
-            <div id="div-email">
-                <label for="email" id="email">Email Address</label><br>
-                <input type="text" class="input-email">
+                <div id="div-email">
+                    <label for="email" id="email">Email Address</label><br>
+                    <input type="text" class="input-email">
+                </div>
+                <div id="div-message">
+                    <label id="message">Message</label><br>
+                    <!-- <input type="text" id="input-message"> -->
+                    <textarea name="message" id="input-message" style="resize: none"></textarea>
+                </div>
+                <div>
+                    <button id="btn-submit" type="submit">Get in touch</button>
+                </div>
             </div>
-            <div id="div-message">
-                <label id="message">Message</label><br>
-                <textarea name="message" id="input-message" cols="30" rows="10"></textarea>
-            </div>
-            
         </form>
     </section>
-    <!-- <section id="sec-form">
-        <div id="form">
-            <div id="container-tit">
-                <h2>Say hello</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing .</p>
-            </div>
-            <div id="div-names">
-                <div>
-                    <p>First Name</p>
-                    <input type="text">
-                </div>
-                <div>
-                    <p>Last Name</p>
-                    <input type="text">
-                </div>
-            </div>
-            <div>
-                <p>Email Address</p>
-                <input type="text">
-            </div>
-            <div>
-                <p>Message</p>
-                <input type="text">
-            </div>
-            <div>
-                <button>Get in touch</button>
-            </div>
-        </div>
-    </section> -->
     <section>
         <div class="container-h3">
             <h3 id="sec5-h3">Lorem Ipsum</h3>
@@ -128,11 +104,11 @@
         <div id="container-input">
             <div id="divh3-p">
                 <h3 id="sec5-h3-2">Stay in the loop</h3>
-                <p class="p7">Subscribe to receive the latest news and updates about TDA. <br> We promise not to spam you! </p>
+                <p>Subscribe to receive the latest news and updates about TDA. <br> We promise not to spam you! </p>
             </div>
             <div>
                 <input id="input-email" type="text" placeholder="Enter email address">
-                <button id="btn-4">Continue</button>
+                <button type="submit" id="btn-4">Continue</button>
             </div>
         </div>
     </section>
