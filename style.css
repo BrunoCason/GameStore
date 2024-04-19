@@ -85,9 +85,6 @@ h1 {
     color: #FFFFFF;
     border-radius: 40px;
     border: none;
-    font-size: 16px;
-    font-weight: 500;
-    font-style: normal;
     width: 195px;
     height: 53px;
     margin-top: 80px;
@@ -117,11 +114,13 @@ h1 {
     border: none;
     margin-top: 25px;
     margin-right: 100px;
+}
+
+.see-all {
     font-size: 20px;
     font-family: "Rubik", sans-serif;
     font-weight: 500;
     font-style: normal;
-    cursor: pointer;
 }
 
 .image-container, .div-container-fire {
