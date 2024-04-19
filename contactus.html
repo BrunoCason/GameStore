@@ -70,7 +70,7 @@
         </div>
         <form>
             <div id="container-form">
-                <fieldset class="grupo">
+                <fieldset>
                     <div class="campo">
                         <label for="firstName" id="firstName">First Name</label><br>
                         <input type="text" class="input-name">
@@ -82,11 +82,11 @@
                 </fieldset>
                 <div id="div-email">
                     <label for="email" id="email">Email Address</label><br>
-                    <input type="text" class="input-email">
+                    <input type="text" id="input-email-form">
                 </div>
                 <div id="div-message">
                     <label id="message">Message</label><br>
-                    <textarea name="message" id="input-message" style="resize: none"></textarea>
+                    <textarea name="message" id="input-message-form" style="resize: none"></textarea>
                 </div>
                 <div>
                     <button id="btn-submit" type="submit">Get in touch</button>
@@ -106,7 +106,8 @@
             </div>
             <div>
                 <input id="input-email" type="text" placeholder="Enter email address">
-                <button type="submit" id="btn-4">Continue</button>
+                <button type="submit" id="btn-4" onclick="validar()">Continue</button>
+                <span id="mensagem-erro">Example: example@example.com</span>
             </div>
         </div>
     </section>
@@ -142,6 +143,6 @@
             <p>Copyright ® 2022 prodesigner All rights Rcerved</p>
         </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="script-contactus.js"></script>
 </body>
 </html>

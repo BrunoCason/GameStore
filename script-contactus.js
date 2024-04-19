@@ -10,7 +10,7 @@ function validar() {
     if (validarEmail.test(email)) {
         emailInput.style.border = '2px solid Green';    // caso o email esteja correto, borda do input fica verde
         msgErro.style.display = 'none'
-        
+        setTimeout
     } else {
         emailInput.style.border = '2px solid Red';      // caso o email esteja incorreto, borda do input fica vermelho
         msgErro.style.display = 'block'                 // e aparece a mensagem de erro
