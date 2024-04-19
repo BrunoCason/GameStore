@@ -187,7 +187,7 @@ fieldset {
     margin-right: 90px;
 }
 
-.input-name {
+#input-first-name {
     width: 322px;
     height: 56px;
     border-radius: 9px;
@@ -195,6 +195,28 @@ fieldset {
     background: rgba(255, 255, 255, 7%);
     color: #FFFFFF;
     outline: none;
+}
+
+#msg-erro-firstname {
+    display: none;
+    color: red;
+    font-size: 12px;
+}
+
+#input-last-name {
+    width: 322px;
+    height: 56px;
+    border-radius: 9px;
+    border: 0.6px #CECECE solid;
+    background: rgba(255, 255, 255, 7%);
+    color: #FFFFFF;
+    outline: none;
+}
+
+#msg-erro-lastname {
+    display: none;
+    color: red;
+    font-size: 12px;
 }
 
 #input-email-form {
@@ -205,6 +227,12 @@ fieldset {
     background: rgba(255, 255, 255, 7%);
     color: #FFFFFF;
     outline: none;
+}
+
+#msg-erro-email-form{
+    display: none;
+    color: red;
+    font-size: 12px;
 }
 
 #message, #firstName, #lastName, #email {
@@ -222,6 +250,12 @@ fieldset {
     background: rgba(255, 255, 255, 7%);
     color: #FFFFFF;
     outline: none;
+}
+
+#msg-erro-message-form {
+    display: none;
+    color: red;
+    font-size: 12px;
 }
 
 #div-message, #div-email {
@@ -308,7 +342,7 @@ fieldset {
     outline: none;
 }
 
-#mensagem-erro {
+#mensagem-erro-email {
     display: none;
     color: red;
     font-size: 12px;
