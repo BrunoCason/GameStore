@@ -72,27 +72,27 @@
                 <fieldset>
                     <div class="campo">
                         <label for="firstName" id="firstName">First Name</label><br>
-                        <input type="text" id="input-first-name" oninput="validarFirstName()"><br>
+                        <input type="text" id="input-first-name"><br>
                         <span id="msg-erro-firstname">The first name must contain at least 3 characters</span>
                     </div>
                     <div class="campo">
                         <label for="lastName" id="lastName">Last Name</label><br>
-                        <input type="text" id="input-last-name" oninput="validarLastName()"><br>
+                        <input type="text" id="input-last-name"><br>
                         <span id="msg-erro-lastname">The last name must contain at least 3 characters</span>
                     </div>
                 </fieldset>
                 <div id="div-email">
                     <label for="email" id="email">Email Address</label><br>
-                    <input type="text" id="input-email-form" oninput="ValidarEmailForm()">
+                    <input type="text" id="input-email-form">
                     <span id="msg-erro-email-form">Example: example@example.com</span>
                 </div>
                 <div id="div-message">
                     <label id="message">Message</label><br>
-                    <textarea name="message" id="input-message-form" style="resize: none" oninput="ValidarMessageForm()"></textarea><br>
+                    <textarea name="message" id="input-message-form" style="resize: none"></textarea><br>
                     <span id="msg-erro-message-form">Short message</span>
                 </div>
                 <div>
-                    <button id="btn-submit" type="submit">Get in touch</button>
+                    <button id="btn-submit" type="button" onclick="armazenarForm()">Get in touch</button>
                 </div>
             </div>
         </form>
@@ -108,8 +108,8 @@
                 <p>Subscribe to receive the latest news and updates about TDA. <br> We promise not to spam you! </p>
             </div>
             <div>
-                <input id="input-email" type="text" placeholder="Enter email address" oninput="validar()">
-                <button type="submit" id="btn-4">Continue</button>
+                <input id="input-email" type="text" placeholder="Enter email address">
+                <button type="button" id="btn-4" onclick="armazenarEmailSub()">Continue</button>
                 <span id="mensagem-erro-email">Example: example@example.com</span>
             </div>
         </div>
