@@ -1,13 +1,12 @@
-// Função para armazenar no localstorage
-function armazenarEmail() {
+// Função para validar o email
+function validarEmail() {
 
-    // Validação email
-    const validarEmail = /\w+@\w+\.\w+/;                        // regex para validar email
+    const validacao = /\w+@\w+\.\w+/;                        // regex para validar email
     let msgErro = document.getElementById('mensagem-erro')      // Mensagen de erro
     let emailInput = document.getElementById('input-email');
     let email = emailInput.value;
 
-    if (validarEmail.test(email)) {
+    if (validacao.test(email)) {
         emailInput.style.border = '2px solid Green';            // caso o email esteja correto
         msgErro.style.display = 'none'                          // borda do input fica verde
 
