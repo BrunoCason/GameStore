@@ -80,6 +80,20 @@ function validarForm() {
         document.getElementById('msg-erro-lastname').style.display = 'none';
         document.getElementById('msg-erro-email-form').style.display = 'none';
         document.getElementById('msg-erro-message-form').style.display = 'none';
+
+        // Pegando o first name para inserir na mensagem de confirmação
+        let nomeConfirmacao = document.getElementById('nome-confirmacao')
+        nomeConfirmacao.innerHTML = firstName
+
+        // Mensagem de confirmação de envio do form
+        // Após armazenar, mensagem de confirmação aparece
+        let mensagemConfirmacao = document.getElementById('mensagem-confirmacao-form');
+        mensagemConfirmacao.style.display = 'block'
+
+        // Função para tirar a mensagem de confirmação, dura 3 segundos
+        setTimeout(function() {
+            mensagemConfirmacao.style.display = 'none'
+        }, 3000)
     }
 }
 
@@ -96,8 +110,22 @@ function validarEmailSub() {
         msgErroEmail.style.display = 'none'                          // borda do input fica verde
 
         // Armazena o email no localstorage caso ele seja validado
-        localStorage.setItem('email', email);
-            
+        localStorage.setItem('emailSub', email);
+        
+        // Limpa o campo, tira mensagem de erro e borda colorida
+        document.getElementById('input-email').value = '';
+        document.getElementById('input-email').style.border = 'none';
+        document.getElementById('mensagem-erro-email').style.display = 'none';
+
+        // Mensagem de confirmação de envio do email
+        // Após armazenar, mensagem de confirmação aparece
+        let mensagemConfirmacao = document.getElementById('confirmacao-subscribe');
+        mensagemConfirmacao.style.display = 'block'
+
+        // Função para tirar a mensagem de confirmação, dura 2 segundos
+        setTimeout(function() {
+            mensagemConfirmacao.style.display = 'none'
+        }, 2000)
     } else {
         emailInput.style.border = '2px solid Red';              // caso o email esteja incorreto
         msgErroEmail.style.display = 'block'                         // borda do fica vermelhor e retorna erro
