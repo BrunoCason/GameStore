@@ -5,7 +5,7 @@
 body {
     background-color: #39289F;
     color: #FFFFFF;
-    background-image: url("images/imagem-fundo.png");
+    background-image: url("/Public/Assets/Images-home/image-fundo.png");
     background-repeat: no-repeat;
     background-position: right top;
 }
@@ -207,7 +207,7 @@ h1 {
 
 #sec-3 {
     margin-top: 500px;
-    background-image: url("images/Rectangle 5.png");
+    background-image: url("/Public/Assets/Images-home/fundo-services.png");
     background-repeat: no-repeat;
     background-size: cover;
     padding: 0;

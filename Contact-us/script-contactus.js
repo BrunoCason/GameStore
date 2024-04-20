@@ -1,3 +1,4 @@
+// Função para validar o formulario
 function validarForm() {
     const validarNome = /^[a-zA-Z]{3,15}$/;  // regex para validar nomes
     const validarEmail = /\w+@\w+\.\w+/;    // regex para validar email
@@ -17,6 +18,7 @@ function validarForm() {
     }
 
     // Validar first name
+    // Chama a função validarCampo(), inserindo os parametros necessarios
     let firstName = validarCampo(
         document.getElementById('input-first-name'),
         validarNome,
@@ -24,6 +26,7 @@ function validarForm() {
     );
 
     // Validar last name
+    // Chama a função validarCampo(), inserindo os parametros necessarios
     let lastName = validarCampo(
         document.getElementById('input-last-name'),
         validarNome,
@@ -31,6 +34,7 @@ function validarForm() {
     );
 
     // Validar email
+    // Chama a função validarCampo(), inserindo os parametros necessarios
     let email = validarCampo(
         document.getElementById('input-email-form'),
         validarEmail,
@@ -43,21 +47,39 @@ function validarForm() {
 
     if(message.length < 3) {
         messageForm.style.border = '2px solid Red';  // se a mensagem for menor que 3 caracteres
-        document.getElementById('msg-erro-message-form').style.display = 'block';  // borda fica vermelha e retorna erro
+        document.getElementById('msg-erro-message-form').style.display = 'block'  // borda fica vermelha e retorna erro
     } else {
         messageForm.style.border = '2px solid Green';  // se a mensagem foi maior que 3 caracteres
-        document.getElementById('msg-erro-message-form').style.display = 'none';  // borda fica verde e não retorna erro
+        document.getElementById('msg-erro-message-form').style.display = 'none'  // borda fica verde e não retorna erro
     }
 
     // Validação para armazenar no local storage
-    // se firstName, lastName, email == true message >= 3 armazena no local storage
+    // se firstName, lastName, email == true e message >= 3 
+    // armazena no local storage e limpa o formulario
     if (firstName && lastName && email && message.length >= 3) {
+        // Armazena no local storage
         localStorage.setItem('firstName', firstName);
         localStorage.setItem('lastName', lastName);
         localStorage.setItem('email', email);
         localStorage.setItem('message', message);
 
-        
+        // Limpa o formulario
+        document.getElementById('input-first-name').value = '';
+        document.getElementById('input-last-name').value = '';
+        document.getElementById('input-email-form').value = '';
+        document.getElementById('input-message-form').value = '';
+
+        // Remover a cor do input
+        document.getElementById('input-first-name').style.border = 'none';
+        document.getElementById('input-last-name').style.border = 'none';
+        document.getElementById('input-email-form').style.border = 'none';
+        document.getElementById('input-message-form').style.border = 'none';
+
+        // Remove a mensagem de erro
+        document.getElementById('msg-erro-firstname').style.display = 'none';
+        document.getElementById('msg-erro-lastname').style.display = 'none';
+        document.getElementById('msg-erro-email-form').style.display = 'none';
+        document.getElementById('msg-erro-message-form').style.display = 'none';
     }
 }
 
@@ -81,6 +103,8 @@ function validarEmailSub() {
         msgErroEmail.style.display = 'block'                         // borda do fica vermelhor e retorna erro
     }
 }
+
+
 
 // // Jeito anterior
 // // Função para validação do form
