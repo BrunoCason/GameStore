@@ -10,3 +10,7 @@ Foram criadas duas páginas seguindo o design original prototipado no Figma, ond
 - Todos os campos de formulário em ambas as páginas são validados através de JavaScript.
 - Os dados inseridos nos formulários são armazenados localmente utilizando o LocalStorage do navegador.
 - Implementação de uma tela de erro dedicada para lidar com situações inesperadas durante a navegação no projeto.
+
+# Abrir e rodar o projeto
+
+Depois de baixar o projeto, você pode optar por abrir o Visual Studio Code e usar a extensão Live Serve, ou abrir o `index.html` no navegador.
