@@ -14,55 +14,55 @@
 </head>
 <body>
     <header>
-        <div id="div-header">
+        <div id="header-container">
             <div>
-                <p id="logo-menu">LOGO</p>
+                <p id="logo-text">LOGO</p>
             </div>
-            <nav id="menu">
+            <nav id="main-navigation">
                 <ul>
                     <li><a href="/home/index.html">Home</a></li>
                     <li><a href="/Page-error/error-page.html">About us</a></li>
                     <li><a href="/Page-error/error-page.html">Portfolio</a></li>
                     <li><a href="/Page-error/error-page.html">News</a></li>
-                    <li><a id="contact-us" href="contactus.html">Contact us</a></li>
+                    <li><a id="contact-us" href="/Contact-us/contactus.html">Contact us</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    <section id="sec-1">
+    <section id="section-contact">
         <div>
-            <p id="p-home">Home > <span id="span-contact">Contact us</span></p>
+            <p id="p-contact">Home > <span id="span-contact">Contact us</span></p>
             <h1>Lorem Ipsum is simply dummy text of the printing and.</h1>
-            <p id="p-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+            <p id="text-contact">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
         </div>
     </section>
     <section>
-        <div id="div-img">
-            <img src="/Public/Assets/images-contactUs/global.png" alt="">
+        <div id="image-container">
+            <img src="/Public/Assets/images-contactUs/global.png" alt="imagem de um mapa mundial">
         </div>
-        <div id="container">
-            <div id="div-follow">
+        <div id="contact-container">
+            <div id="contact-medias">
                 <p id="p-follow">Follow us</p>
-                <a href="https://www.facebook.com" target="_blank"><img class="medias" src="/Public/Assets/images-contactUs/facebook.png" alt=""></a>
-                <a href="https://instagram.com" target="_blank"><img class="medias" src="/Public/Assets/images-contactUs/instagram.png" alt=""></a>
-                <a href="https://twitter.com" target="_blank"><img class="medias" src="/Public/Assets/images-contactUs/twitter.png" alt=""></a>
-                <a href="https://www.linkedin.com" target="_blank"><img class="medias" src="/Public/Assets/images-contactUs/linkedin.png" alt=""></a>  
+                <a href="https://www.facebook.com" target="_blank"><img class="medias" src="/Public/Assets/images-contactUs/facebook.png" alt="icone facebook"></a>
+                <a href="https://instagram.com" target="_blank"><img class="medias" src="/Public/Assets/images-contactUs/instagram.png" alt="icone instagram"></a>
+                <a href="https://twitter.com" target="_blank"><img class="medias" src="/Public/Assets/images-contactUs/twitter.png" alt="icone twitter"></a>
+                <a href="https://www.linkedin.com" target="_blank"><img class="medias" src="/Public/Assets/images-contactUs/linkedin.png" alt="icone linkedin"></a>  
             </div>
-            <div class="traco-vertical"></div>
-            <div id="phone">
-                <img id="img-phone" src="/Public/Assets/images-contactUs/phone.png" alt="">
-                <p id="p-phone">+94 4444 5555 6</p>
+            <div class="vertical-line"></div>
+            <div id="phone-container">
+                <img id="phone-icon" src="/Public/Assets/images-contactUs/phone.png" alt="icone celular">
+                <p>+94 4444 5555 6</p>
             </div>
-            <div class="traco-vertical"></div>
-            <div id="loc">
-                <img id="img-loc" src="/Public/Assets/images-contactUs/loc.png" alt="">
+            <div class="vertical-line"></div>
+            <div id="loc-container">
+                <img id="loc-icon" src="/Public/Assets/images-contactUs/loc.png" alt="icone localizacao">
                 <p>but also the leap into electronic <br> typesetting</p>
             </div>
         </div>
         </div>
     </div>
     </section>
-    <section id="sec-form">
+    <section id="section-form">
         <div>
             <h2>Say hello</h2>
             <p id="p-form">Lorem Ipsum is simply dummy text of the printing .</p>
@@ -81,18 +81,18 @@
                         <span id="msg-erro-lastname">The last name must contain at least 3 characters</span>
                     </div>
                 </fieldset>
-                <div id="div-email">
+                <div id="email-container">
                     <label for="email" id="email">Email Address</label><br>
                     <input type="text" id="input-email-form">
                     <span id="msg-erro-email-form">Example: example@example.com</span>
                 </div>
-                <div id="div-message">
+                <div id="message-container">
                     <label id="message">Message</label><br>
-                    <textarea name="message" id="input-message-form" style="resize: none"></textarea><br>
+                    <textarea name="message" id="input-message-form"></textarea><br>
                     <span id="msg-erro-message-form">Short message</span>
                 </div>
                 <div>
-                    <button id="btn-submit" type="button" onclick="validarForm()">Get in touch</button>
+                    <button id="button-submit" type="button" onclick="validarForm()">Get in touch</button>
                 </div>
             </div>
         </form>
@@ -102,18 +102,18 @@
         </div>
     </section>
     <section>
-        <div class="container-h3">
-            <h3 id="sec5-h3">Lorem Ipsum</h3>
-            <p class="p7">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+        <div>
+            <h3 id="sub-heading">Lorem Ipsum</h3>
+            <p class="sub-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
         </div>
         <div id="container-input">
-            <div id="divh3-p">
-                <h3 id="sec5-h3-2">Stay in the loop</h3>
+            <div id="div-sub">
+                <h3 id="loop-heading">Stay in the loop</h3>
                 <p>Subscribe to receive the latest news and updates about TDA. <br> We promise not to spam you! </p>
             </div>
             <div>
                 <input id="input-email" type="text" placeholder="Enter email address">
-                <button type="button" id="btn-4" onclick="validarEmailSub()">Continue</button>
+                <button type="button" id="button-continue" onclick="validarEmailSub()">Continue</button>
                 <span id="mensagem-erro-email">Example: example@example.com</span>
             </div>
             <div id="confirmacao-subscribe">
@@ -122,15 +122,15 @@
         </div>
     </section>
     <footer>
-        <div id="div-footer">
-            <div id="div-logo">
+        <div id="footer-container">
+            <div id="logo-container">
                 <h4 id="logo-footer">LOGO</h4>
-                <p class="p-footer">Lorem Ipsum is simply dummy text of the <br> printing and typesetting industry.</p>
-                <p class="p-footer">@Lorem</p>
+                <p>Lorem Ipsum is simply dummy text of the <br> printing and typesetting industry.</p>
+                <p>@Lorem</p>
             </div>
-            <nav id="nav-a">
-                <ul id="lista-footer" style="list-style: none;">
-                    <p class="p-ul">About us</p>
+            <nav id="footer-nav">
+                <ul id="lista-footer">
+                    <p class="footer-p">About us</p>
                     <li><a href="/Page-error/error-page.html">Zeux</a></li>
                     <li><a href="/Page-error/error-page.html">Portfolio</a></li>
                     <li><a href="/Page-error/error-page.html">Careers</a></li>
@@ -138,18 +138,18 @@
                 </ul>
             </nav>
             <div>
-                <p class="p-ul">Contact us</p>
+                <p class="footer-p">Contact us</p>
                 <p class="p-contact-us">Lorem Ipsum is simply dummy text <br> of the printing and typesetting <br> industry.</p>
                 <p class="p-contact-us">+908 89097 890</p>
             </div>
             <nav id="medias">
-                <a href="https://www.facebook.com" target="_blank"><img src="/Public/Assets/images-contactUs/facebook2.png" alt=""></a>
-                <a href="https://instagram.com" target="_blank"><img src="/Public/Assets/images-contactUs/instagram2.png" alt=""></a>
-                <a href="https://twitter.com" target="_blank"><img src="/Public/Assets/images-contactUs/twitter2.png" alt=""></a>
-                <a href="https://www.linkedin.com" target="_blank"><img src="/Public/Assets/images-contactUs/linkdin2.png" alt=""></a>
+                <a href="https://www.facebook.com" target="_blank"><img src="/Public/Assets/images-contactUs/facebook2.png" alt="icone facebook"></a>
+                <a href="https://instagram.com" target="_blank"><img src="/Public/Assets/images-contactUs/instagram2.png" alt="icone instagram"></a>
+                <a href="https://twitter.com" target="_blank"><img src="/Public/Assets/images-contactUs/twitter2.png" alt="icone twitter"></a>
+                <a href="https://www.linkedin.com" target="_blank"><img src="/Public/Assets/images-contactUs/linkdin2.png" alt="icone linkedin"></a>
             </nav>
         </div>
-        <div id="div-copy">
+        <div id="copyright-container">
             <p>Copyright ® 2022 prodesigner All rights Rcerved</p>
         </div>
     </footer>

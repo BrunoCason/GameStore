@@ -8,13 +8,15 @@ body {
     background: linear-gradient(180deg, rgba(34,17,231,1) 0%, rgba(56,56,55,1) 100%);
 }
 
-#div-header {
+/* Header */
+
+#header-container {
     display: flex;
     justify-content: space-between;
     padding: 0 20px; 
 }
 
-#logo-menu {
+#logo-text {
     font-size: 29px;
     display: flex;
     color: #fff;
@@ -24,7 +26,7 @@ body {
     font-style: normal;
 }
 
-#menu ul li {
+#main-navigation ul li {
     list-style-type: none;
     display: inline;
     margin-right: 50px;
@@ -50,12 +52,14 @@ a {
     font-style: normal;
 }
 
-#sec-1 {
+/* Section 1 */
+
+#section-contact {
     text-align: center;
     margin-top: 80px;
 }
 
-#p-home {
+#p-contact {
     font-weight: 400;
     font-style: normal;
     font-size: 16px;
@@ -74,20 +78,22 @@ h1 {
     font-style: normal;
 }
 
-#p-text {
+#text-contact {
     font-size: 16px;
     font-weight: 500;
     font-style: normal;
 }
 
-#div-img {
+/* Section 2 */
+
+#image-container {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 93px;
 }
 
-#container {
+#contact-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -106,7 +112,7 @@ h1 {
     margin-left: -15px;
 }
 
-#phone, #loc {
+#phone-container, #loc-container {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -115,20 +121,22 @@ h1 {
     font-style: normal;
 }
 
-#img-phone, #img-loc {
+#phone-icon, #loc-icon {
     margin-right: 25px;
 }
 
-#div-follow {
+#contact-medias {
     width: 281px;
 }
 
-.traco-vertical {
+.vertical-line {
     height: 102px;
     border: 1px solid white;
 }
 
-#sec-form {
+/* Section 3 */
+
+#section-form {
     margin-top: 146px;
     background-image: url("/Public/Assets/images-contactUs/fundo-form.png");
     background-repeat: no-repeat;
@@ -137,12 +145,6 @@ h1 {
     height: 858px;
     margin-left: -8px;
     margin-right: -8px;
-}
-
-#container-form {
-    margin-top: 50px;
-    height: 600px;
-    margin-left: 50px;
 }
 
 h2 {
@@ -160,17 +162,18 @@ h2 {
     font-style: normal;
 }
 
-#container-tit p {
-    font-size: 13px;
-    font-weight: 500;
-    font-style: normal;
-}
-
+/* Form */
 
 form {
     display: flex;
     align-items: center;
     justify-content: space-around;
+}
+
+#container-form {
+    margin-top: 50px;
+    height: 600px;
+    margin-left: 50px;
 }
 
 fieldset {
@@ -250,6 +253,7 @@ fieldset {
     background: rgba(255, 255, 255, 7%);
     color: #FFFFFF;
     outline: none;
+    resize: none;
 }
 
 #msg-erro-message-form {
@@ -258,11 +262,11 @@ fieldset {
     font-size: 12px;
 }
 
-#div-message, #div-email {
+#div-message, #message-container {
     margin-top: 20px;
 }
 
-#btn-submit {
+#button-submit {
     font-size: 16px;
     font-weight: 400;
     font-style: normal;
@@ -301,7 +305,9 @@ fieldset {
     font-style: normal;
 }
 
-#sec5-h3 {
+/* Section 4 */
+
+#sub-heading {
     font-size: 30px;
     font-weight: 600;
     font-style: normal;
@@ -309,7 +315,7 @@ fieldset {
     margin-top: 150px;
 }
 
-.p7 {
+.sub-p {
     font-size: 16px;
     font-weight: 400;
     font-style: normal;
@@ -329,7 +335,7 @@ fieldset {
     margin-bottom: 148px;
 }
 
-#btn-4 {
+#button-continue {
     background-color: #DC7000;
     color: #FFFFFF;
     width: 105px;
@@ -361,7 +367,7 @@ fieldset {
     font-style: normal;
 }
 
-#sec5-h3-2 {
+#loop-heading {
     font-size: 30px;
     font-weight: 500;
     font-style: normal;
@@ -392,9 +398,11 @@ fieldset {
     margin-left: 205px;
 }
 
-#divh3-p {
+#div-sub {
     padding-left: 40px;
 }
+
+/* Footer */
 
 footer {
     background-color: #070707;
@@ -404,14 +412,14 @@ footer {
     padding-top: 10px;
 }
 
-#div-footer {
+#footer-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     padding-top: 30px;
 }
 
-#div-logo {
+#logo-container {
     margin-left: 44px;
 }
 
@@ -422,13 +430,7 @@ footer {
     margin-top: 10px;
 }
 
-.p-footer {
-    font-size: 16px;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.p-ul {
+.footer-p {
     font-size: 17px;
     font-weight: 500;
     font-style: normal;
@@ -440,13 +442,17 @@ footer {
     font-style: normal;
 }
 
+#lista-footer{
+    list-style: none;
+}
+
 .p-contact-us {
     font-size: 16px;
     font-weight: 400;
     font-style: normal;
 }
 
-#nav-a {
+#footer-nav {
     margin-right: 50px;
 }
 
@@ -455,7 +461,7 @@ footer {
     margin-right: 44px;
 }
 
-#div-copy {
+#copyright-container {
     margin-top: 30px;
     text-align: center;
     border-top: 0.8px solid ;

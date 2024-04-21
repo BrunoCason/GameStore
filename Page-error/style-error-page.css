@@ -7,13 +7,15 @@ body {
     color: #FFFFFF;
 }
 
-#div-header {
+/* Header */
+
+#header-container {
     display: flex;
     justify-content: space-between;
     padding: 0 20px; 
 }
 
-#logo-menu {
+#logo-text {
     font-size: 29px;
     display: flex;
     color: #fff;
@@ -23,7 +25,7 @@ body {
     font-style: normal;
 }
 
-#menu ul li {
+#main-navigation ul li {
     list-style-type: none;
     display: inline;
     margin-right: 50px;
@@ -48,6 +50,8 @@ a {
     font-weight: 400;
     font-style: normal;
 }
+
+/* Section */
 
 section {
     text-align: center;

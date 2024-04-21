@@ -10,13 +10,15 @@ body {
     background-position: right top;
 }
 
-#div-header {
+/* Header */
+
+#header-container {
     display: flex;
     justify-content: space-between;
     padding: 0 20px; 
 }
 
-#logo-menu {
+#logo-text {
     font-size: 29px;
     display: flex;
     color: #fff;
@@ -26,7 +28,7 @@ body {
     font-style: normal;
 }
 
-#menu ul li {
+#main-navigation ul li {
     list-style-type: none;
     display: inline;
     margin-right: 50px;
@@ -52,14 +54,16 @@ a {
     font-style: normal;
 }
 
-#sec1 {
+/* Section 1 */
+
+#work-container {
     margin-top: 100px;
     margin-left: 100px;
     height: 512px;
     width: 527px;
 }
 
-#p1{
+#work-description{
     color: #E87D0E;
     -webkit-text-stroke: 1px black;
     font-size: 20px;
@@ -73,13 +77,13 @@ h1 {
     font-style: normal;
 }
 
-#p2 {
+#work-text {
     font-size: 16px;
     font-weight: 500;
     font-style: normal;
 }
 
-#btn-1 {
+#details-button {
     background: rgb(250,131,5);
     background: linear-gradient(100deg, rgba(250,131,5,1) 0%, rgba(251,158,60,1) 100%);
     color: #FFFFFF;
@@ -96,21 +100,21 @@ h1 {
     font-style: normal;
 }
 
-#container {
+#trending-container {
     margin-top: 200px;
     margin-left: 100px;
     display: flex;
     justify-content: space-between;
 }
 
-#p3 {
+#trending-description {
     font-size: 31px;
     font-family: "Rubik", sans-serif;
     font-weight: 700;
     font-style: normal;
 }
 
-#btn-2 {
+#button-see-all {
     background: rgba(255, 255, 255, 11%);
     color: #FFFFFF;
     border-radius: 10px;
@@ -128,21 +132,21 @@ h1 {
     font-style: normal;
 }
 
-.image-container, .div-container-fire {
+.image-container, .fire-container {
     padding: 57px 83px 0 85px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
-.div-container-fire {
+.fire-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 0 100px 10px 100px;
 }
 
-.div-fire {
+.fire-item {
     display: flex;
     align-items: flex-start;
     width: auto;
@@ -157,11 +161,13 @@ h1 {
     font-weight: 500;
     font-style: normal;
 }
-.fire {
+.fire-icon {
     margin-top: 20px;
 }
 
-#h2-s2 {
+/* Section 2 */
+
+#industry-text {
     text-align: center;
     font-size: 35px;
     font-weight: 600;
@@ -169,30 +175,30 @@ h1 {
     margin-top: 120px;
 }
 
-.container-h3 {
+.heading-container {
     margin-top: 100px;
     margin-left: 100px;
     height: 173px;
     width: 545px;
 }
 
-.h3 {
+.subheading {
     font-size: 30px;
     font-weight: 600;
     font-style: normal;
 }
 
-#p4 {
+#industry-text-p {
     font-size: 16px;
     font-weight: 400;
     font-style: normal;
 }
 
-#imagem-pai {
+#image-container-pai {
     position: relative;
 }
 
-#image-fundo2 {
+#background-image2 {
     position: absolute;
     left: 50%;
     top: 195%;
@@ -200,12 +206,14 @@ h1 {
     width: 1090px;
 }
 
-#image-fundo {
+#background-image1 {
     margin-left: 60%;
     margin-top: -30px;
 }
 
-#sec-3 {
+/* Section 3 */
+
+#development-section {
     margin-top: 500px;
     background-image: url("/Public/Assets/Images-home/fundo-services.png");
     background-repeat: no-repeat;
@@ -217,7 +225,7 @@ h1 {
 
 }
 
-#sec3-h3 {
+#development-heading {
     text-align: center;
     font-size: 30px;
     font-weight: 700;
@@ -225,7 +233,7 @@ h1 {
     padding-top: 100px;
 }
 
-#p5 {
+#development-paragraph {
     text-align: center;
     font-size: 16px;
     font-weight: 400;
@@ -246,7 +254,9 @@ h1 {
     padding: 0 100px 0 100px;
 }
 
-#sec4-h3 {
+/* Section 4*/
+
+#recent-projects-heading {
     text-align: center;
     font-size: 30px;
     font-weight: 700;
@@ -254,14 +264,14 @@ h1 {
     margin-top: 100px;
 }
 
-#p6 {
+#projects-p {
     text-align: center;
     font-size: 14px;
     font-weight: 400;
     font-style: normal;
 }
 
-#container-images2 {
+#project-images-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -269,15 +279,15 @@ h1 {
     margin-top: 100px;
 }
 
-.espaco-imagens {
+.image-space{
     margin-bottom: 33px;
 }
 
-.img-meio {
+.image-meio {
     padding: 0 27px 0 27px;
 }
 
-#btn-3 {
+#button-see-all-2 {
     background: rgba(255, 255, 255, 11%);
     color: #FFFFFF;
     border-radius: 10px;
@@ -291,20 +301,22 @@ h1 {
     cursor: pointer;
 }
 
-#div-btn {
+#div-see-all {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 40px;
 }
 
-#sec5-h3 {
+/* Section 5*/
+
+#sub-heading {
     font-size: 30px;
     font-weight: 600;
     font-style: normal;
 }
 
-.p7 {
+.sub-p {
     font-size: 16px;
     font-weight: 400;
     font-style: normal;
@@ -320,7 +332,7 @@ h1 {
     border-radius: 15px;
 }
 
-#btn-4 {
+#button-continue {
     background-color: #DC7000;
     color: #FFFFFF;
     width: 105px;
@@ -354,7 +366,7 @@ h1 {
     font-style: normal;
 }
 
-#sec5-h3-2 {
+#loop-heading {
     font-size: 30px;
     font-weight: 500;
     font-style: normal;
@@ -385,9 +397,11 @@ h1 {
     margin-left: 115px;
 }
 
-#divh3-p {
+#div-sub {
     padding-left: 49px;
 }
+
+/* Footer */
 
 footer {
     background-color: #070707;
@@ -398,14 +412,14 @@ footer {
     padding-top: 10px;
 }
 
-#div-footer {
+#footer-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     padding-top: 30px;
 }
 
-#div-logo {
+#logo-container {
     margin-left: 44px;
 }
 
@@ -416,13 +430,7 @@ footer {
     margin-top: 10px;
 }
 
-.p-footer {
-    font-size: 16px;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.p-ul {
+.footer-p {
     font-size: 17px;
     font-weight: 500;
     font-style: normal;
@@ -434,13 +442,17 @@ footer {
     font-style: normal;
 }
 
+#lista-footer {
+    list-style: none;
+}
+
 .p-contact-us {
     font-size: 16px;
     font-weight: 400;
     font-style: normal;
 }
 
-#nav-a {
+#footer-nav {
     margin-right: 50px;
 }
 
@@ -449,7 +461,7 @@ footer {
     margin-right: 44px;
 }
 
-#div-copy {
+#copyright-container {
     margin-top: 30px;
     text-align: center;
     border-top: 0.8px solid;
@@ -457,5 +469,15 @@ footer {
     font-size: 13px;
     font-weight: 400;
     font-style: normal;
+}
+
+/* Efeitos hover images */
+
+img {
+    transition: all 0.3s ease-in-out;
+}
+  
+  img:hover {
+    transform: scale(1.1);
 }
 
