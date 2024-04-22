@@ -1,3 +1,14 @@
+![homepage](https://github.com/BrunoCason/Desafio-01/assets/91099495/684d2cc5-d77a-4d93-84c0-3e3a0740a48c)
+
+Indice
+=================
+<!--ts-->
+* [Descrição do projeto](#descrição-do-projeto)
+* [Requisitos](#requisitos)
+* [Abrir e rodar o projeto](#abrir-e-rodar-o-projeto)
+
+---
+
 # Descrição do projeto
 
 Este projeto visa criar um website para uma loja de games fictícia, utilizando HTML, CSS e JavaScript.
