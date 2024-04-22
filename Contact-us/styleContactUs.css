@@ -297,6 +297,7 @@ fieldset {
     display: none;
     font-weight: 800;
     font-style: normal;
+    box-shadow: 10px 10px 10px #070707
 }
 
 #mensagem-sucesso {
@@ -331,8 +332,8 @@ fieldset {
     margin-right: auto;
     display: flex;
     flex-wrap: wrap;
-    border-radius: 15px;
     margin-bottom: 148px;
+    border-radius: 15px;
 }
 
 #button-continue {
@@ -365,6 +366,7 @@ fieldset {
     display: none;
     font-weight: 800;
     font-style: normal;
+    box-shadow: 10px 10px 10px #070707
 }
 
 #loop-heading {
