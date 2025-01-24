@@ -1,25 +1,25 @@
 ![homepage](https://github.com/BrunoCason/Desafio-01/assets/91099495/684d2cc5-d77a-4d93-84c0-3e3a0740a48c)
 
-Indice
+# Index
 =================
 <!--ts-->
-* [Descrição do projeto](#descrição-do-projeto)
-* [Requisitos](#requisitos)
-* [Abrir e rodar o projeto](#abrir-e-rodar-o-projeto)
+* [Project Description](#project-description)
+* [Requirements](#requirements)
+* [Open and Run the Project](#open-and-run-the-project)
 
-# 📄 Descrição do projeto
+# 📄 Project Description
 
-Este projeto visa criar um website para uma loja de games fictícia, utilizando HTML, CSS e JavaScript.
+This project aims to create a website for a fictional game store, using HTML, CSS, and JavaScript.
 
-Foram criadas duas páginas seguindo o design original prototipado no Figma, onde a primeira é a home, e a segunda a página de contato. O objetivo é manter fidelidade ao design inicial enquanto se implementa algumas das funcionalidades necessárias para uma experiência de usuário completa.
+Two pages were created following the original design prototyped in Figma, where the first is the homepage, and the second is the contact page. The goal is to maintain fidelity to the original design while implementing some of the necessary features for a complete user experience.
 
-# 📋 Requisitos 
+# 📋 Requirements 
 
-- Utilização exclusiva de HTML, CSS e JavaScript, sem dependência de bibliotecas externas.
-- Todos os campos de formulário em ambas as páginas são validados através de JavaScript.
-- Os dados inseridos nos formulários são armazenados localmente utilizando o LocalStorage do navegador.
-- Implementação de uma tela de erro dedicada para lidar com situações inesperadas durante a navegação no projeto.
+- Exclusive use of HTML, CSS, and JavaScript, without relying on external libraries.
+- All form fields on both pages are validated using JavaScript.
+- Data entered in the forms is stored locally using the browser's LocalStorage.
+- Implementation of a dedicated error screen to handle unexpected situations during navigation in the project.
 
-# 🗂 Abrir e rodar o projeto
+# 🗂 Open and Run the Project
 
-Depois de baixar o projeto, você pode optar por abrir o Visual Studio Code e usar a extensão Live Serve, ou abrir o `index.html` no navegador.
+After downloading the project, you can choose to open it in Visual Studio Code and use the Live Server extension, or open the `index.html` file in your browser.
